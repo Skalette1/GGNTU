@@ -1,0 +1,75 @@
+
+:root {
+  --main-color: #fff;
+}
+
+.home {
+  background: url('../../../public/ggntu.webp') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+
+.left {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--main-color);
+  background-color: rgba(255, 255, 255, .3);
+  backdrop-filter: blur(9px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 50vw;
+  padding: 3rem 0 3rem 1.3rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.left-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  color: rgb(1, 30, 128);
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+.left-top img {
+  width: 60px;
+}
+
+.left-bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+@media(max-width: 850px) {
+  .home {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    border-radius: 3rem 3rem 0 0;
+    grid-row: 2/3;
+    max-width: 100%;
+  }
+
+  .left-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-bottom {
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -7,7 +7,7 @@ import PieChart from '../../../shared/components/Pie'
 export const Sustainability = () => {
   const [selectedId, setSelectedId] = useState(1);
 
-  const turnText = (id) => setSelectedId(id);
+  const turnText = (id: number) => setSelectedId(id);
 
   const current = sustainability.find(item => item.id === selectedId);
 

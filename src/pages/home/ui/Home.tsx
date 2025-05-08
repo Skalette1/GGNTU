@@ -12,7 +12,7 @@ export const Home = () => {
         <h1>ГГНТУ</h1>
         </div>
         <div className="left-bottom">
-        <p>Годовой отчет 2023</p>
+        <p>Годовой отчет 2024</p>
         <h2>Устойчивость через изменения</h2>
         </div>
       </div>

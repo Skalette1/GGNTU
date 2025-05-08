@@ -1,0 +1,51 @@
+
+
+.development-container {
+  margin: 3rem auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.development {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.development-card {
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.development-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.target {
+  color: #fff;
+  background-color: #0b708c;
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 15px 15px 25px rgba(28, 91, 218, 0.4);
+}

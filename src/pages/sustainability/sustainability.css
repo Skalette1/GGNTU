@@ -15,6 +15,42 @@ html, body, #root {
   min-height: 90vh;
   height: 100%;
   position: relative;
+  transition: .5s all ease-in-out;
+}
+
+.sustainability.bg-2 {
+  background: url('/public/ggntuprepods.jpg');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.sustainability.bg-2  .sustainability-right-text-content {
+    background-color: rgba(118, 42, 32, 0.4);
+}
+
+.sustainability.bg-3 {
+    background: url('/public/ggntuholl_enhanced.jpg') no-repeat;
+    background-size: cover;
+}
+
+.sustainability.bg-3 h2 {
+  color: #000000 ;
+  border-bottom: 2px solid #000000;
+}
+
+.sustainability.bg-3 li:hover {
+  color: #000000;
+}
+
+.sustainability.bg-3 .sustainability-right-text-content {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    color: #000;
+}
+
+.sustainability.bg-3 ::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 2rem;
 }
 
 .sustainability-left {
@@ -101,6 +137,17 @@ html, body, #root {
   padding-bottom: 0.5rem;
 }
 
+.pie {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .sustainability ::-webkit-scrollbar {
   width: 12px;
   height: 5px;
@@ -144,8 +191,24 @@ html, body, #root {
   }
 
   .pie {
-    width: 40% !important;
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem 0;
+    margin: 0 auto;
     display: flex;
-    justify-content: center !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media(max-width: 768px) {
+  .pie {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 0;
+  }
+
+  .sustainability.bg-3 {
+    background-position:center;
   }
 }

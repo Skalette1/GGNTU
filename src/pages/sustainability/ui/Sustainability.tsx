@@ -12,7 +12,7 @@ export const Sustainability = () => {
   const current = sustainability.find(item => item.id === selectedId);
 
   return (
-    <div className="sustainability">
+    <div className={`sustainability bg-${selectedId}`}>
       <div className="sustainability-left">
         <h1>Устойчивость через изменения</h1>
         <ul>
